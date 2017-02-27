@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<title>Главная</title>
+
+	<!-- plugins style  -->
+	<link rel="stylesheet" href="../css/libs/slick.css">
+
+	<!-- base style -->
+	<link rel="stylesheet" href="../css/templates/template.css">
+
+	<!-- components style -->
+	<link rel="stylesheet" href="../css/blocks/block.filter.css">
+</head>
+
+
+<body>
+
+<header class="header">
+	<div class="header_panel">
+		<div class="container">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="navbar-toggle_text">Меню</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="logo">
+				<a href="index.html">
+					<img src="../img/logo.png" alt="">
+					<span>Магазин виниловых пластинок</span>
+				</a>
+			</div>
+			<div class="header_info">
+				<ul class="contacts">
+					<li><a href="#" class="contacts_location">Где нас найти в г. Москва</a></li>
+					<li><a href="#" class="contacts_phone">8 (495) 100-10-20</a></li>
+					<li><a href="#" class="contacts_message">Напишите нам</a></li>
+				</ul>
+				<ul class="user-panel">
+					<li><a href="#" class="user-panel_profile"></a></li>
+					<li><a href="#" class="user-panel_basket"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Каталог</a></li>
+					<li><a href="#">Наш магазин</a></li>
+					<li><a href="#">Обслуживание пластинок</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Нужна помощь?</a></li>
+				</ul>
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<main class="main">
+	<div class="container">
+
+		<aside class="main-sidebar">
+			<div class="b-filter">
+				<div class="b-filter_title" data-toggle="collapse" data-target=".js-collapse-filter" aria-expanded="false">Поиск по каталогу</div>
+				<div class="js-collapse-filter collapse">
+					<form action="#">
+						<div class="form-group">
+							<label for="filterPerformer">Исполнитель</label>
+							<input class="form-control" type="text" value="" id="filterPerformer" placeholder="например, Michael Jackson">
+						</div>
+						<div class="form-group">
+							<label for="filterAlbum">Альбом</label>
+							<input class="form-control" type="text" value="" id="filterAlbum" placeholder="например, Thriller">
+						</div>
+						<div class="form-group">
+							<label for="filterFormat">Формат носителя</label>
+							<select class="form-control" id="filterFormat">
+								<option>нажмите для выбора</option>
+								<option>item</option>
+								<option>item</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="filterLabel">Лейбл</label>
+							<input class="form-control" type="text" value="" id="filterLabel" placeholder="например, Warner Music">
+						</div>
+						<div class="form-group">
+							<label for="filterGenre">Жанр</label>
+							<select class="form-control" id="filterGenre">
+								<option>нажмите для выбора</option>
+								<option>item</option>
+								<option>item</option>
+							</select>
+						</div>
+						<fieldset class="form-group">
+							<legend>Особые метки</legend>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" id="filterMetaCheck1" checked>
+									Первый пресс
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" id="filterMetaCheck2">
+									Запечатано
+								</label>
+							</div>
+						</fieldset>
+						<fieldset class="form-group">
+							<legend>Лучшие</legend>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" id="filterMetaCheck1" checked>
+									ТОП 10
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" id="filterMetaCheck2">
+									ТОП 100
+								</label>
+							</div>
+						</fieldset>
+						<button type="submit" class="btn btn-primary btn-animate">Искать по каталогу</button>
+					</form>
+				</div>
+			</div> <!-- end b-filter -->
+
+			<div class="b-now-sale">
+				<div class="b-now-sale_amount"></div>
+				<span>пластинок в продаже прямо сейчас</span>
+			</div> <!-- end b-now-sale -->
+
+			<div class="b-just-buy">
+				<div class="b-just-buy_title">Только что купили</div>
+				<div class="b-just-buy_thumb">
+					<img src="https://unsplash.it/160/160?image=777" alt="">
+				</div>
+				<span class="b-just-buy_performer">Madonna. MDNA</span>
+				<div class="b-just-buy_buyer">Владимир, г. Москва</div>
+			</div> <!-- end b-just-buy -->
+		</aside>
+
+		<div class="main-content">
+
+			<div id="mainCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#mainCarousel" data-slide-to="1"></li>
+					<li data-target="#mainCarousel" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<div class="row">
+							<div class="col-md-5">
+								<div class="carousel-img">
+									<img src="../img/content/carousel-img1.jpg" alt="" data-adaptive-background='1'>
+								</div>
+							</div>
+							<div class="col-md-7">
+							  <div class="carousel-caption">
+							    <div class="h1">Cold Play Viva La Vida</div>
+							    <p>Дебютный студийный альбом британской певицы и автора песен FKA twigs, выпущенный 6 агуста 2014 года лейблом Young Turks. LP1 был хорошо оценен мировыми критиками, а также занял высокие позиции во многих годовых музыкальных рейтингах.</p>
+							    <a href="#" class="btn btn-primary">Купить за 231 руб.</a>
+							  </div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="row">
+							<div class="col-md-5">
+								<div class="carousel-img">
+									<img src="../img/content/card-img-1.jpg" alt="" data-adaptive-background='1'>
+								</div>
+							</div>
+							<div class="col-md-7">
+							  <div class="carousel-caption">
+							    <div class="h1">Cold Play Viva La Vida</div>
+							    <p>Дебютный студийный альбом британской певицы и автора песен FKA twigs, выпущенный 6 агуста 2014 года лейблом Young Turks.</p>
+							    <a href="#" class="btn btn-primary">Купить за 231 руб.</a>
+							  </div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="row">
+							<div class="col-md-5">
+								<div class="carousel-img">
+									<img src="https://unsplash.it/320/320?image=1020" alt="" data-adaptive-background='1'>
+								</div>
+							</div>
+							<div class="col-md-7">
+							  <div class="carousel-caption">
+							    <div class="h1">Cold Play Viva La Vida</div>
+							    <p>Дебютный студийный альбом британской певицы и автора песен FKA twigs, выпущенный 6 агуста 2014 года лейблом Young Turks. LP1 был хорошо оценен мировыми критиками, а также занял высокие позиции</p>
+							    <a href="#" class="btn btn-primary">Купить за 231 руб.</a>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#mainCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#mainCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<div class="b-services-links">
+				<div class="b-services-links_title">
+					<div class="h3">У нас вы можете:</div>
+					<ul class="b-services-links_list">
+						<li class="b-services-links_item"><a href="#">Помыть пластинку ультразвуком</a></li>
+						<li class="b-services-links_item"><a href="#">Исправить кривизну пластинки</a></li>
+						<li class="b-services-links_item"><a href="#">Прослушать на Hi-End аппаратуре</a></li>
+						<li class="b-services-links_item"><a href="#">Купить аксессуары</a></li>
+					</ul>
+				</div>
+			</div>
+
+
+
+			<div class="main-content_inner">
+				
+				<div class="b-about-box">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="b-about-box_cont">
+								<div class="h3">Приходите 
+								в наш магазин!</div>
+
+								Адрес в Москве <br>
+								м. Арбатская, <br>
+								Новый Арбат 16<br>
+								<a href="#">Посмотреть на карте</a>
+							</div>
+						</div>
+						<div class="col-md-9">
+							<div class="b-about-box_photo">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="b-about-box_photod">
+										<img src="https://unsplash.it/g/295/215?image=795" alt="">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="b-about-box_photod">
+										<img src="https://unsplash.it/g/295/215?image=795" alt="">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="b-about-box_photod">
+										<img src="https://unsplash.it/g/295/215?image=795" alt="">
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h2>Редкие издания</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="b-exclusive">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="b-exclusive_thumb">
+										<img src="../img/content/exclusive-img-1.jpg" alt="">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="b-exclusive_text">
+										<h3 class="b-exclusive_title">Trivium. In Waves (2 LP)</h3>
+										<p>Дебютный студийный альбом британской певицы и автора песен FKA twigs, выпущенный 6 агуста 2014 года лейблом Young Turks. LP1 был хорошо оценен мировыми критиками, а также занял высокие позиции во многих годовых музыкальных рейтингах.</p>
+									</div>
+								</div>
+								<div class="b-price">
+										<u class="b-price_old">5 990 руб.</u>
+										<div class="b-price_actual">
+											<span>4 407 руб.</span>
+											<a href="#" class="btn btn-primary"></a>
+										</div>
+									</div>
+							</div>
+
+
+
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="b-exclusive">
+							<div class="b-exclusive_thumb">
+								<img src="../img/content/exclusive-img-2.jpg" alt="">
+							</div>
+							<div class="b-exclusive_text">
+								<h3 class="b-exclusive_title">Lykke Li. I Never Learn (LP)</h3>
+								<p>I Never Learn создавался после очередного разрыва отношений: "Меня переполняли боль, стыд, печаль, чувство вины, неостывшее желание. В стихах я постоянно обвиняла себя – думаю, это чувство многим знакомо".</p>
+							</div>
+							<div class="b-price">
+								<u class="b-price_old">2 859 руб.</u>
+								<div class="b-price_actual">
+									<span>2 287 руб.</span>
+									<a href="#" class="btn btn-primary"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="b-catalog">
+					<div class="b-catalog_item">
+						<div class="b-catalog_thumb">
+							<img src="https://unsplash.it/160/160?image=331" alt="">
+						</div>
+						<h3 class="b-catalog_title">Red Hot Chili Peppers. The Getaway (2 LP)</h3>
+						<div class="b-price">
+							<div class="b-price_actual">
+								<span>4 407 руб.</span>
+								<a href="#" class="btn btn-primary btn-primary"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div>
+							<div data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+								<img src="https://unsplash.it/90/90?image=992" alt="">
+								<h3>Ультразвуковая мойка пластинок</h3>
+							</div>
+							<div id="collapseExample" class="collapse">
+								<p>Мойка 12" виниловых пластинок осуществляется на уникальной мощной ультразвуковой моющей машинке Klaudio KD-CLN-LP200, разработаной в США. В процессе мойки используется ТОЛЬКО специально подготовленная дистиллированная вода без добавления моющих средств. Мощность ультразвукового генератора в 200 Вт позволяет полностью удалить загрязнения из звуковых дорожек и с поверхности пластинки, при этом не повредив бумажное "яблоко".</p>
+								<div class="button-group">
+									<a href="#" class="btn btn-primary">Заказать за 200 руб.</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div data-toggle="collapse" aria-expanded="false">
+							<img src="https://unsplash.it/90/90?image=992" alt="">
+							<h3>Исправить кривизну пластинки</h3>
+						</div>
+						<div>
+							<div class="collapse">
+								<p></p>
+								<div class="button-group">
+									<a href="#" class="btn btn-primary">Заказать за 200 руб.</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div>
+							<img src="https://unsplash.it/90/90?image=992" alt="">
+						</div>
+						<div>
+							<h3>Прослушать на Hi-End аппаратуре</h3>
+							<p></p>
+							<div id="collapseExample" class="collapse">
+								<div class="button-group">
+									<a href="#" class="btn btn-primary">Заказать за 200 руб.</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div>
+							<img src="https://unsplash.it/90/90?image=992" alt="">
+						</div>
+						<div>
+							<h3>Купить аксессуары</h3>
+							<p></p>
+							<div id="collapseExample" class="collapse">
+								<div class="button-group">
+									<a href="#" class="btn btn-primary">Заказать за 200 руб.</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="b-promo">
+					<div class="b-promo_img">
+						<a href="#"><img src="https://unsplash.it/605/360?image=1078" alt=""></a>
+					</div>
+					<div class="b-promo_text">
+						<h3><a href="#">Каждый последний понедельник месяца исправление кривизны пластинок со скидкой в 50%</a></h3>
+						<p>Мойка 12" виниловых пластинок осуществляется на уникальной мощной ультразвуковой моющей машинке Klaudio KD-CLN-LP200, разработаной в США.</p>
+					</div>
+				</div>
+
+				<ul class="b-tags-group">
+					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Поп <span>527</span></a></li>
+					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Рок <span>1027</span></a></li>
+					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Электроника <span>688</span></a></li>
+					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Джаз <span>263</span></a></li>
+					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Фанк <span>261</span></a></li>
+					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Фолк, Кантри <span>212</span></a></li>
+					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Хип Хоп<span>97</span></a></li>
+					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Регги <span>62</span></a></li>
+					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Блюз <span>50</span></a></li>
+					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Классика <span>48</span></a></li>
+					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Танцевальная <span>32</span></a></li>
+				</ul>
+
+				<div class="content">
+					<h2>Магазин виниловых пластинок</h2>
+					<p>Если у вас случайно появились пластинки (кто-то их вам отдал или они достались вам по-наследству), прежде всего, не отчаивайтесь и не пытайтесь их сразу выкинуть. Прослушивание пластинки - увлекательное занятие, не требующее огромных средств. Для этого нужно только ваше время, и удовольствие к вам придет гарантировано.</p>
+					<p>Но если вы все-таки тверды в своем желании избавиться от пластинок, то в идеале составьте список имеющихся виниловых дисков и вышлите его нам на почту. Либо вы можете сделать фотографии на телефон и выслать нам. Если все это сложно, то звоните, и мы вас проконсультируем.</p>
+					<p>Сразу отметим, что советский винил ценится не высоко, как правило издания Мелодии мы покупаем за 10-50 рублей. Дороже стоят пластинки, изданные в Европе, США и Японии.</p>
+				</div>
+
+			</div>
+
+		</div>
+
+
+	</div>
+</main>
+
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<a href="#">Наверх</a>
+			</div>
+			<div class="col-md-3">
+				<div class="h3">Каталог</div>
+				<ul>
+					<li><a href="#">Все пластинки</a></li>
+					<li><a href="#">Редкие пластинки</a></li>
+					<li><a href="#">Новинки</a></li>
+					<li><a href="#">ТОП100</a></li>
+					<li><a href="#">Дополнительные услуги</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<div class="h3">Нужна помощь?</div>
+				<ul>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Самовывоз</a></li>
+					<li><a href="#">Гарантийные обязательства</a></li>
+					<li><a href="#">Как хранить пластинки?</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<div class="h3">О компании</div>
+				<ul>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Наш магазин</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Работа у нас</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				соц. сети
+			</div>
+			<div class="col-md-3"><a href="tel:+74951001020">8 (495) 100-10-20</a></div>
+			<div class="col-md-3"><a href="mailto:shop@vinyl.ru">shop@vinyl.ru</a></div>
+			<div class="col-md-3">
+				<a href="#">м. Арбатская, Новый Арбат 16.</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<ul class="footer_copyright">
+					<li>© 2017 vinyl.ru — магазин виниловых пластинок. </li>
+					<li><a href="#">Оферта   Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-md-push-3">
+				<ul class="footer_development">
+					<li>Дизайн сайта — <a href="#">ДзенДизайн</a></li>
+					<li>Разработка — <a href="#">Unlim company</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+<!-- libs -->
+<!-- <script src="../js/libs/jquery-3.1.1.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../js/libs/jquery.adaptive-backgrounds.js"></script>
+<!-- <script src="../js/libs/tether.min.js"></script> -->
+<script src="../js/libs/bootstrap.js"></script>
+<script src="../js/libs/bootstrap-lightbox.min.js"></script>
+<script src="../js/libs/slick.min.js"></script>
+
+
+<script>
+
+$(function() {
+	var WINDOW_W = $(window).outerWidth();
+
+
+  function bgCarousel() {
+  	var WINDOW_W = $(window).outerWidth();
+	if (WINDOW_W >= 1140) {
+		$.adaptiveBackground.run({
+			selector: 'img[data-adaptive-background="1"]',
+			parent: '#mainCarousel .item',
+			success: function($img, data) {
+				// console.log('Success!', $img, data);
+				// console.log(data.color);
+			}
+		});
+	} else {
+		$('#mainCarousel .item').removeAttr('style');
+	}
+  }
+  // $('#mainCarousel').on('load', function() {
+  //   bgCarousel();
+  // });
+  bgCarousel();
+
+  $(window).resize(bgCarousel);
+
+
+
+$(window).resize(function(){
+	if( $(window).outerWidth() <= 1140 ) {
+		$('.js-collapse-filter').addClass('collapse');
+		$('.js-collapse-filter').collapse('hide');
+	} else {
+		$('.js-collapse-filter').removeClass('collapse');
+		$('.js-collapse-filter').removeAttr('style');
+	}
+}).resize();
+
+	// init slider reviews
+	// $('.js-slider-reviews').slick({
+	// slidesToShow: 3,
+	// slidesToScroll: 1,
+	// arrows: false,
+	// dots: true,
+	// centerMode: true,
+	// asNavFor: '.js-slider-reviews-nav',
+	// variableWidth: true,
+	// responsive: [
+	// 	{
+	// 		breakpoint: 640,
+	// 		settings: {
+	// 			slidesToShow: 1,
+	// 		}
+	// 	}
+	// ]
+	// });
+	// $('.js-slider-reviews-nav').slick({
+	// 	slidesToShow: 7,
+	// 	slidesToScroll: 1,
+	// 	asNavFor: '.js-slider-reviews',
+	// 	variableWidth: true,
+	// 	dots: false,
+	// 	focusOnSelect: true,
+	// 	responsive: [
+	// 		{
+	// 			breakpoint: 640,
+	// 			settings: {
+	// 				slidesToShow: 4,
+	// 			}
+	// 		},
+	// 		{
+	// 			breakpoint: 376,
+	// 			settings: {
+	// 				slidesToShow: 2,
+	// 			}
+	// 		}
+	// 	]
+	// });
+
+	}); // end jquery
+</script>
+
+</body>
+</html>

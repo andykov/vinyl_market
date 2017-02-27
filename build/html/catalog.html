@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<title>Главная</title>
+
+	<!-- plugins style  -->
+	<link rel="stylesheet" href="../css/libs/slick.css">
+
+	<!-- base style -->
+	<link rel="stylesheet" href="../css/templates/template.css">
+
+	<!-- components style -->
+	<link rel="stylesheet" href="../css/blocks/block.filter.css">
+</head>
+
+
+<body>
+
+<header class="header">
+	<div class="header_panel">
+		<div class="container">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="navbar-toggle_text">Меню</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="logo">
+				<a href="index.html">
+					<img src="../img/logo.png" alt="">
+					<span>Магазин виниловых пластинок</span>
+				</a>
+			</div>
+			<div class="header_info">
+				<ul class="contacts">
+					<li><a href="#" class="contacts_location">Где нас найти в г. Москва</a></li>
+					<li><a href="#" class="contacts_phone">8 (495) 100-10-20</a></li>
+					<li><a href="#" class="contacts_message">Напишите нам</a></li>
+				</ul>
+				<ul class="user-panel">
+					<li><a href="#" class="user-panel_profile"></a></li>
+					<li><a href="#" class="user-panel_basket"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Каталог</a></li>
+					<li><a href="#">Наш магазин</a></li>
+					<li><a href="#">Обслуживание пластинок</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Нужна помощь?</a></li>
+				</ul>
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<main class="main">
+	<div class="container">
+
+		<aside class="main-sidebar">
+			<div class="b-filter">
+				<div class="b-filter_title" data-toggle="collapse" data-target=".js-collapse-filter" aria-expanded="false">Поиск по каталогу</div>
+				<div class="js-collapse-filter">
+					<form action="#">
+						<div class="form-group">
+							<label for="filterPerformer">Исполнитель</label>
+							<input class="form-control" type="text" value="" id="filterPerformer" placeholder="например, Michael Jackson">
+						</div>
+						<div class="form-group">
+							<label for="filterAlbum">Альбом</label>
+							<input class="form-control" type="text" value="" id="filterAlbum" placeholder="например, Thriller">
+						</div>
+						<div class="form-group">
+							<label for="filterFormat">Формат носителя</label>
+							<select class="form-control" id="filterFormat">
+								<option>нажмите для выбора</option>
+								<option>item</option>
+								<option>item</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="filterLabel">Лейбл</label>
+							<input class="form-control" type="text" value="" id="filterLabel" placeholder="например, Warner Music">
+						</div>
+						<div class="form-group">
+							<label for="filterGenre">Жанр</label>
+							<select class="form-control" id="filterGenre">
+								<option>нажмите для выбора</option>
+								<option>item</option>
+								<option>item</option>
+							</select>
+						</div>
+						<fieldset class="form-group">
+							<legend>Особые метки</legend>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" id="filterMetaCheck1" checked>
+									Первый пресс
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" id="filterMetaCheck2">
+									Запечатано
+								</label>
+							</div>
+						</fieldset>
+						<fieldset class="form-group">
+							<legend>Лучшие</legend>
+							<div class="checkbox-inline">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" id="filterMetaCheck1" checked>
+									ТОП 10
+								</label>
+							</div>
+							<div class="checkbox-inline">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" id="filterMetaCheck2">
+									ТОП 100
+								</label>
+							</div>
+						</fieldset>
+						<button type="submit" class="btn btn-primary btn-animate">Искать по каталогу</button>
+					</form>
+				</div>
+			</div> <!-- end b-filter -->
+
+			<div class="b-now-sale">
+				<div class="b-now-sale_amount">12 610</div>
+				<span>пластинок в продаже прямо сейчас</span>
+			</div> <!-- end b-now-sale -->
+
+			<div class="b-just-buy">
+				<div class="b-just-buy_title">Только что купили</div>
+				<div class="b-just-buy_thumb">
+					<img src="https://unsplash.it/160/160?image=777" alt="">
+				</div>
+				<span class="b-just-buy_performer">Madonna. MDNA</span>
+				<div class="b-just-buy_buyer">Владимир, г. Москва</div>
+			</div> <!-- end b-just-buy -->
+		</aside>
+
+		<div class="main-content">
+			<div class="main-content_inner">
+				
+				<ol class="breadcrumb">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li class="active">Поп</li>
+				</ol>
+
+				<div class="b-content ">
+				  <h1>Hello, world!</h1>
+				  <img src="../img/content/catalog-context-img-1.png" alt="">
+				  <p>Мойка 12’’ виниловых пластинок осуществляется на уникальной мощной ультразвуковой моющей машинке Klaudio KD-CLN-LP200, разработанной в США. В процессе мойки используется ТОЛЬКО специально подготовленная дистиллированная вода без добавления моющих средств. Мощность ультразвукового генератора в 200 Вт позволяет полностью удалить загрязнения из звуковых дорожек и с поверхности пластинки, при этом не повредив бумажное «яблоко».</p>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-6">1 - 20 / 527</div>
+					<div class="col-xs-6">Сортировка</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-6 col-sm-3 col-xl-five">
+						<div class="b-card">
+							<div class="b-card_img">
+								<img src="../img/content/card-img-1.jpg" alt="">
+							</div>
+							<div class="b-card_cont">
+								<h4 class="b-card_title">Red Hot Chili Peppers The Getaway (2 LP)</h4>
+							</div>
+							<div class="b-card_footer">
+								<div class="b-price">
+									<div class="b-price_sum">
+										<s class="b-price_old">990 руб.</s>
+										<span class="b-price_current">664 руб.</span>
+									</div>
+									<a href="#" class="btn btn-primary">
+										иконка
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-xl-five">
+						<div class="b-card">
+							<div class="b-card_img">
+								<img src="../img/content/card-img-1.jpg" alt="">
+							</div>
+							<div class="b-card_cont">
+								<h4 class="b-card_title">Red Hot Chili Peppers The Getaway (2 LP)</h4>
+							</div>
+							<div class="b-card_footer">
+								<div class="b-price">
+									<div class="b-price_sum">
+										<s class="b-price_old">990 руб.</s>
+										<span class="b-price_current">664 руб.</span>
+									</div>
+									<a href="#" class="btn btn-primary">
+										иконка
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-xl-five">
+						<div class="b-card">
+							<div class="b-card_img">
+								<img src="../img/content/card-img-1.jpg" alt="">
+							</div>
+							<div class="b-card_cont">
+								<h4 class="b-card_title">Red Hot Chili Peppers The Getaway (2 LP)</h4>
+							</div>
+							<div class="b-card_footer">
+								<div class="b-price">
+									<div class="b-price_sum">
+										<s class="b-price_old">990 руб.</s>
+										<span class="b-price_current">664 руб.</span>
+									</div>
+									<a href="#" class="btn btn-primary">
+										иконка
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-xl-five">
+						<div class="b-card">
+							<div class="b-card_img">
+								<img src="../img/content/card-img-1.jpg" alt="">
+							</div>
+							<div class="b-card_cont">
+								<h4 class="b-card_title">Red Hot Chili Peppers The Getaway (2 LP)</h4>
+							</div>
+							<div class="b-card_footer">
+								<div class="b-price">
+									<div class="b-price_sum">
+										<s class="b-price_old">990 руб.</s>
+										<span class="b-price_current">664 руб.</span>
+									</div>
+									<a href="#" class="btn btn-primary">
+										иконка
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-xl-five">
+						<div class="b-card">
+							<div class="b-card_img">
+								<img src="../img/content/card-img-1.jpg" alt="">
+							</div>
+							<div class="b-card_cont">
+								<h4 class="b-card_title">Red Hot Chili Peppers The Getaway (2 LP)</h4>
+							</div>
+							<div class="b-card_footer">
+								<div class="b-price">
+									<div class="b-price_sum">
+										<s class="b-price_old">990 руб.</s>
+										<span class="b-price_current">664 руб.</span>
+									</div>
+									<a href="#" class="btn btn-primary">
+										иконка
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-xl-five">
+						<div class="b-card">
+							<div class="b-card_img">
+								<img src="../img/content/card-img-1.jpg" alt="">
+							</div>
+							<div class="b-card_cont">
+								<h4 class="b-card_title">Red Hot Chili Peppers The Getaway (2 LP)</h4>
+							</div>
+							<div class="b-card_footer">
+								<div class="b-price">
+									<div class="b-price_sum">
+										<s class="b-price_old">990 руб.</s>
+										<span class="b-price_current">664 руб.</span>
+									</div>
+									<a href="#" class="btn btn-primary">
+										иконка
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-6 col-lg-4">1 - 20 / 527</div>
+					<div class="col-xs-6 col-lg-4 col-lg-push-4">Показать все</div>
+					<div class="col-xs-12 col-lg-4 col-lg-pull-4">
+						<nav aria-label="...">
+							<ul class="pagination">
+							<li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+
+
+				<div class="b-tags-group">
+					<h3>В нашем онлайн магазине вы можете выбрать виниловые пластинки по жанрам</h3>
+					<a class="btn btn-default" href="#">Поп <span class="badge">527</span></a>
+					<a class="btn btn-default" href="#">Рок <span class="badge">1027</span></a>
+					<a class="btn btn-default" href="#">Электроника <span class="badge">688</span></a>
+					<a class="btn btn-default" href="#">Джаз <span class="badge">263</span></a>
+					<a class="btn btn-default" href="#">Фанк <span class="badge">261</span></a>
+					<a class="btn btn-default" href="#">Фолк, Кантри <span class="badge">212</span></a>
+					<a class="btn btn-default" href="#">Хип Хоп<span class="badge">97</span></a>
+					<a class="btn btn-default" href="#">Регги <span class="badge">62</span></a>
+					<a class="btn btn-default" href="#">Блюз <span class="badge">50</span></a>
+					<a class="btn btn-default" href="#">Классика <span class="badge">48</span></a>
+					<a class="btn btn-default" href="#">Танцевальная <span class="badge">32</span></a>
+				</div>
+
+				<h2>Магазин виниловых пластинок</h2>
+				<p>Если у вас случайно появились пластинки (кто-то их вам отдал или они достались вам по-наследству), прежде всего, не отчаивайтесь и не пытайтесь их сразу выкинуть. Прослушивание пластинки — увлекательное занятие, не требующие огромных средств. Для этого нужно только ваше время, и удовольствие к вам придет гарантировано.</p>
+
+				<p>Но если вы все-таки тверды в своем желании избавиться от пластинок, то в идеале составьте список имеющихся виниловых дисков и вышлете его нам на почту. Либо вы можете сделать фотографии на телефон и выслать нам. Если все это сложно, то звоните, и мы вас проконсультируем.</p>
+
+				<p>Сразу отметим, что советский винил ценится не высоко, как правило издания Мелодии мы покупаем за 10-50 рублей. Дороже стоят пластинки, изданные в Европе, США и Японии.</p>
+			</div>
+
+		</div>
+
+	</div>
+</main>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<a href="#">Наверх</a>
+			</div>
+			<div class="col-md-3">
+				<div class="h3">Каталог</div>
+				<ul>
+					<li><a href="#">Все пластинки</a></li>
+					<li><a href="#">Редкие пластинки</a></li>
+					<li><a href="#">Новинки</a></li>
+					<li><a href="#">ТОП100</a></li>
+					<li><a href="#">Дополнительные услуги</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<div class="h3">Нужна помощь?</div>
+				<ul>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Самовывоз</a></li>
+					<li><a href="#">Гарантийные обязательства</a></li>
+					<li><a href="#">Как хранить пластинки?</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<div class="h3">О компании</div>
+				<ul>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Наш магазин</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Работа у нас</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				соц. сети
+			</div>
+			<div class="col-md-3"><a href="tel:+74951001020">8 (495) 100-10-20</a></div>
+			<div class="col-md-3"><a href="mailto:shop@vinyl.ru">shop@vinyl.ru</a></div>
+			<div class="col-md-3">
+				<a href="#">м. Арбатская, Новый Арбат 16.</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<ul class="footer_copyright">
+					<li>© 2017 vinyl.ru — магазин виниловых пластинок. </li>
+					<li><a href="#">Оферта   Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-md-push-3">
+				<ul class="footer_development">
+					<li>Дизайн сайта — <a href="#">ДзенДизайн</a></li>
+					<li>Разработка — <a href="#">Unlim company</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- libs -->
+<script src="../js/libs/jquery-3.1.1.min.js"></script>
+<script src="../js/libs/tether.min.js"></script>
+<script src="../js/libs/bootstrap.min.js"></script>
+<script src="../js/libs/bootstrap-lightbox.min.js"></script>
+<script src="../js/libs/slick.min.js"></script>
+
+
+<script>
+	$(function() {
+
+		
+$(window).resize(function(){
+	if( $(window).outerWidth() <= 1140 ) {
+		$('.js-collapse-filter').addClass('collapse');
+		$('.js-collapse-filter').collapse('hide');
+	} else {
+		$('.js-collapse-filter').removeClass('collapse');
+		$('.js-collapse-filter').removeAttr('style');
+	}
+}).resize();
+ 
+// вызовем событие resize
+
+
+	// init slider reviews
+	// $('.js-slider-reviews').slick({
+	// slidesToShow: 3,
+	// slidesToScroll: 1,
+	// arrows: false,
+	// dots: true,
+	// centerMode: true,
+	// asNavFor: '.js-slider-reviews-nav',
+	// variableWidth: true,
+	// responsive: [
+	// 	{
+	// 		breakpoint: 640,
+	// 		settings: {
+	// 			slidesToShow: 1,
+	// 		}
+	// 	}
+	// ]
+	// });
+	// $('.js-slider-reviews-nav').slick({
+	// 	slidesToShow: 7,
+	// 	slidesToScroll: 1,
+	// 	asNavFor: '.js-slider-reviews',
+	// 	variableWidth: true,
+	// 	dots: false,
+	// 	focusOnSelect: true,
+	// 	responsive: [
+	// 		{
+	// 			breakpoint: 640,
+	// 			settings: {
+	// 				slidesToShow: 4,
+	// 			}
+	// 		},
+	// 		{
+	// 			breakpoint: 376,
+	// 			settings: {
+	// 				slidesToShow: 2,
+	// 			}
+	// 		}
+	// 	]
+	// });
+
+	}); // end jquery
+</script>
+
+</body>
+</html>
