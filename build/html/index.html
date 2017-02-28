@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="no-js">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
@@ -18,6 +18,7 @@
 
 	<!-- components style -->
 	<link rel="stylesheet" href="../css/blocks/block.filter.css">
+	<link rel="stylesheet" href="../css/blocks/block.promo.css">
 </head>
 
 
@@ -79,7 +80,7 @@
 		<aside class="main-sidebar">
 			<div class="b-filter">
 				<div class="b-filter_title" data-toggle="collapse" data-target=".js-collapse-filter" aria-expanded="false">Поиск по каталогу</div>
-				<div class="js-collapse-filter collapse">
+				<div class="js-collapse-mobile collapse">
 					<form action="#">
 						<div class="form-group">
 							<label for="filterPerformer">Исполнитель</label>
@@ -92,9 +93,9 @@
 						<div class="form-group">
 							<label for="filterFormat">Формат носителя</label>
 							<select class="form-control" id="filterFormat">
-								<option>нажмите для выбора</option>
-								<option>item</option>
-								<option>item</option>
+								<option value="" disabled selected>нажмите для выбора</option>
+								<option value="">item</option>
+								<option value="">item</option>
 							</select>
 						</div>
 						<div class="form-group">
@@ -104,9 +105,9 @@
 						<div class="form-group">
 							<label for="filterGenre">Жанр</label>
 							<select class="form-control" id="filterGenre">
-								<option>нажмите для выбора</option>
-								<option>item</option>
-								<option>item</option>
+								<option value="" disabled selected>нажмите для выбора</option>
+								<option value="">item</option>
+								<option value="">item</option>
 							</select>
 						</div>
 						<fieldset class="form-group">
@@ -285,48 +286,54 @@
 				</div>
 
 				<h2>Редкие издания</h2>
+
 				<div class="row">
-					<div class="col-md-6">
-						<div class="b-exclusive">
-							<div class="row">
-								<div class="col-md-4">
-									<div class="b-exclusive_thumb">
-										<img src="../img/content/exclusive-img-1.jpg" alt="">
+					<div class="row-height">
+						<div class="col-md-6 col-md-height">
+							<div class="inside-full-height white-box b-exclusive">
+								<div class="row">
+									<div class="col-md-4">
+										<div class="b-exclusive_thumb">
+											<img src="../img/content/exclusive-img-1.jpg" alt="">
+										</div>
 									</div>
-								</div>
-								<div class="col-md-8">
-									<div class="b-exclusive_text">
-										<h3 class="b-exclusive_title">Trivium. In Waves (2 LP)</h3>
-										<p>Дебютный студийный альбом британской певицы и автора песен FKA twigs, выпущенный 6 агуста 2014 года лейблом Young Turks. LP1 был хорошо оценен мировыми критиками, а также занял высокие позиции во многих годовых музыкальных рейтингах.</p>
+									<div class="col-md-8">
+										<div class="b-exclusive_text">
+											<h3 class="b-exclusive_title">Trivium. In Waves (2 LP)</h3>
+											<p>Дебютный студийный альбом британской певицы и автора песен FKA twigs, выпущенный 6 агуста 2014 года лейблом Young Turks. LP1 был хорошо оценен мировыми критиками, а также занял высокие позиции во многих годовых музыкальных рейтингах.</p>
+										</div>
 									</div>
-								</div>
-								<div class="b-price">
+									<div class="b-price">
 										<u class="b-price_old">5 990 руб.</u>
 										<div class="b-price_actual">
 											<span>4 407 руб.</span>
 											<a href="#" class="btn btn-primary"></a>
 										</div>
 									</div>
+								</div>
 							</div>
-
-
-
 						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="b-exclusive">
-							<div class="b-exclusive_thumb">
-								<img src="../img/content/exclusive-img-2.jpg" alt="">
-							</div>
-							<div class="b-exclusive_text">
-								<h3 class="b-exclusive_title">Lykke Li. I Never Learn (LP)</h3>
-								<p>I Never Learn создавался после очередного разрыва отношений: "Меня переполняли боль, стыд, печаль, чувство вины, неостывшее желание. В стихах я постоянно обвиняла себя – думаю, это чувство многим знакомо".</p>
-							</div>
-							<div class="b-price">
-								<u class="b-price_old">2 859 руб.</u>
-								<div class="b-price_actual">
-									<span>2 287 руб.</span>
-									<a href="#" class="btn btn-primary"></a>
+						<div class="col-md-6 col-md-height">
+							<div class="inside-full-height white-box b-exclusive">
+								<div class="row">
+									<div class="col-md-4">
+										<div class="b-exclusive_thumb">
+											<img src="../img/content/exclusive-img-2.jpg" alt="">
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="b-exclusive_text">
+											<h3 class="b-exclusive_title">Lykke Li. I Never Learn (LP)</h3>
+											<p>I Never Learn создавался после очередного разрыва отношений: "Меня переполняли боль, стыд, печаль, чувство вины, неостывшее желание. В стихах я постоянно обвиняла себя – думаю, это чувство многим знакомо".</p>
+										</div>
+									</div>
+									<div class="b-price">
+										<u class="b-price_old">2 859 руб.</u>
+										<div class="b-price_actual">
+											<span>2 287 руб.</span>
+											<a href="#" class="btn btn-primary"></a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -348,91 +355,114 @@
 					</div>
 				</div>
 
+
+
+
 				<div class="row">
-					<div class="col-md-6">
-						<div>
-							<div data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-								<img src="https://unsplash.it/90/90?image=992" alt="">
-								<h3>Ультразвуковая мойка пластинок</h3>
+					<div class="row-height">
+						<div class="col-md-6 col-md-height">
+							<div class="inside-full-height white-box">
+								<div class="collapse-container">
+									<div data-toggle="collapse" aria-expanded="false">
+										<img src="https://unsplash.it/90/90?image=992" alt="">
+										<h3>Ультразвуковая мойка пластинок</h3>
+									</div>
+									<div class="js-collapse-mobile collapse collapse-body">
+										<p>Мойка 12" виниловых пластинок осуществляется на уникальной мощной ультразвуковой моющей машинке Klaudio KD-CLN-LP200, разработаной в США. В процессе мойки используется ТОЛЬКО специально подготовленная дистиллированная вода без добавления моющих средств. Мощность ультразвукового генератора в 200 Вт позволяет полностью удалить загрязнения из звуковых дорожек и с поверхности пластинки, при этом не повредив бумажное "яблоко".</p>
+										<div class="button-group">
+											<a href="#" class="btn btn-primary">Заказать за 200 руб.</a>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div id="collapseExample" class="collapse">
-								<p>Мойка 12" виниловых пластинок осуществляется на уникальной мощной ультразвуковой моющей машинке Klaudio KD-CLN-LP200, разработаной в США. В процессе мойки используется ТОЛЬКО специально подготовленная дистиллированная вода без добавления моющих средств. Мощность ультразвукового генератора в 200 Вт позволяет полностью удалить загрязнения из звуковых дорожек и с поверхности пластинки, при этом не повредив бумажное "яблоко".</p>
-								<div class="button-group">
-									<a href="#" class="btn btn-primary">Заказать за 200 руб.</a>
+						</div>
+						<div class="col-md-6 col-md-height">
+							<div class="inside-full-height white-box">
+								<div class="collapse-container">
+									<div data-toggle="collapse" aria-expanded="false">
+										<img src="https://unsplash.it/90/90?image=992" alt="">
+										<h3>Исправить кривизну пластинки</h3>
+									</div>
+									<div class="js-collapse-mobile collapse collapse-body">
+										<p>Мойка 12" виниловых пластинок осуществляется на уникальной мощной ультразвуковой моющей машинке Klaudio KD-CLN-LP200, разработаной в США. В процессе мойки используется ТОЛЬКО специально подготовленная дистиллированная вода без добавления моющих средств. Мощность ультразвукового генератора в 200 Вт позволяет полностью удалить загрязнения из звуковых дорожек и с поверхности пластинки, при этом не повредив бумажное "яблоко".</p>
+										<div class="button-group">
+											<a href="#" class="btn btn-primary">Заказать за 200 руб.</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div data-toggle="collapse" aria-expanded="false">
-							<img src="https://unsplash.it/90/90?image=992" alt="">
-							<h3>Исправить кривизну пластинки</h3>
-						</div>
-						<div>
-							<div class="collapse">
-								<p></p>
-								<div class="button-group">
-									<a href="#" class="btn btn-primary">Заказать за 200 руб.</a>
+					<div class="row-height">
+						<div class="col-md-6 col-md-height">
+							<div class="inside-full-height white-box">
+								<div class="collapse-container">
+									<div data-toggle="collapse" aria-expanded="false">
+										<img src="https://unsplash.it/90/90?image=992" alt="">
+										<h3>Прослушать на Hi-End аппаратуре</h3>
+									</div>
+									<div class="js-collapse-mobile collapse collapse-body">
+										<p>Мойка 12" виниловых пластинок осуществляется на уникальной мощной ультразвуковой моющей машинке Klaudio KD-CLN-LP200, разработаной в США. В процессе мойки используется ТОЛЬКО специально подготовленная дистиллированная вода без добавления моющих средств. Мощность ультразвукового генератора в 200 Вт позволяет полностью удалить загрязнения из звуковых дорожек и с поверхности пластинки, при этом не повредив бумажное "яблоко".</p>
+										<div class="button-group">
+											<a href="#" class="btn btn-primary">Заказать за 200 руб.</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-6">
-						<div>
-							<img src="https://unsplash.it/90/90?image=992" alt="">
-						</div>
-						<div>
-							<h3>Прослушать на Hi-End аппаратуре</h3>
-							<p></p>
-							<div id="collapseExample" class="collapse">
-								<div class="button-group">
-									<a href="#" class="btn btn-primary">Заказать за 200 руб.</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div>
-							<img src="https://unsplash.it/90/90?image=992" alt="">
-						</div>
-						<div>
-							<h3>Купить аксессуары</h3>
-							<p></p>
-							<div id="collapseExample" class="collapse">
-								<div class="button-group">
-									<a href="#" class="btn btn-primary">Заказать за 200 руб.</a>
+						<div class="col-md-6 col-md-height">
+							<div class="inside-full-height white-box">
+								<div class="collapse-container">
+									<div class="" data-toggle="collapse" aria-expanded="false">
+										<img src="https://unsplash.it/90/90?image=992" alt="">
+										<h3>Купить аксессуары</h3>
+									</div>
+									<div class="js-collapse-mobile collapse collapse-body">
+										<p>Мойка 12" виниловых пластинок осуществляется на уникальной мощной ультразвуковой моющей машинке Klaudio KD-CLN-LP200, разработаной в США. В процессе мойки используется ТОЛЬКО специально подготовленная дистиллированная вода без добавления моющих средств. Мощность ультразвукового генератора в 200 Вт позволяет полностью удалить загрязнения из звуковых дорожек и с поверхности пластинки, при этом не повредив бумажное "яблоко".</p>
+										<div class="button-group">
+											<a href="#" class="btn btn-primary">Заказать за 200 руб.</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
 
 				<div class="b-promo">
-					<div class="b-promo_img">
-						<a href="#"><img src="https://unsplash.it/605/360?image=1078" alt=""></a>
-					</div>
-					<div class="b-promo_text">
-						<h3><a href="#">Каждый последний понедельник месяца исправление кривизны пластинок со скидкой в 50%</a></h3>
-						<p>Мойка 12" виниловых пластинок осуществляется на уникальной мощной ультразвуковой моющей машинке Klaudio KD-CLN-LP200, разработаной в США.</p>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="b-promo_img">
+								<a href="#"><img src="https://unsplash.it/605/360?image=1078" alt=""></a>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="white-box b-promo_text">
+								<h3><a href="#">Каждый последний понедельник месяца исправление кривизны пластинок со скидкой в 50%</a></h3>
+								<p>Мойка 12" виниловых пластинок осуществляется на уникальной мощной ультразвуковой моющей машинке Klaudio KD-CLN-LP200, разработаной в США.</p>
+							</div>
+						</div>
 					</div>
 				</div>
 
-				<ul class="b-tags-group">
-					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Поп <span>527</span></a></li>
-					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Рок <span>1027</span></a></li>
-					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Электроника <span>688</span></a></li>
-					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Джаз <span>263</span></a></li>
-					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Фанк <span>261</span></a></li>
-					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Фолк, Кантри <span>212</span></a></li>
-					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Хип Хоп<span>97</span></a></li>
-					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Регги <span>62</span></a></li>
-					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Блюз <span>50</span></a></li>
-					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Классика <span>48</span></a></li>
-					<li class="b-tags-group_item"><a class="btn btn-secondary" href="#">Танцевальная <span>32</span></a></li>
-				</ul>
+				<div class="b-tags">
+					<h3>В нашем онлайн магазине вы можете выбрать виниловые пластинки по жанрам</h3>
+					<ul class="b-tags_list">
+						<li class="b-tags_item"><a class="btn btn-default" href="#">Поп <span>527</span></a></li>
+						<li class="b-tags_item"><a class="btn btn-default" href="#">Рок <span>1027</span></a></li>
+						<li class="b-tags_item"><a class="btn btn-default" href="#">Электроника <span>688</span></a></li>
+						<li class="b-tags_item"><a class="btn btn-default" href="#">Джаз <span>263</span></a></li>
+						<li class="b-tags_item"><a class="btn btn-default" href="#">Фанк <span>261</span></a></li>
+						<li class="b-tags_item"><a class="btn btn-default" href="#">Фолк, Кантри <span>212</span></a></li>
+						<li class="b-tags_item"><a class="btn btn-default" href="#">Хип Хоп<span>97</span></a></li>
+						<li class="b-tags_item"><a class="btn btn-default" href="#">Регги <span>62</span></a></li>
+						<li class="b-tags_item"><a class="btn btn-default" href="#">Блюз <span>50</span></a></li>
+						<li class="b-tags_item"><a class="btn btn-default" href="#">Классика <span>48</span></a></li>
+						<li class="b-tags_item"><a class="btn btn-default" href="#">Танцевальная <span>32</span></a></li>
+					</ul>
+				</div>
 
-				<div class="content">
+				<div class="b-seo">
 					<h2>Магазин виниловых пластинок</h2>
 					<p>Если у вас случайно появились пластинки (кто-то их вам отдал или они достались вам по-наследству), прежде всего, не отчаивайтесь и не пытайтесь их сразу выкинуть. Прослушивание пластинки - увлекательное занятие, не требующее огромных средств. Для этого нужно только ваше время, и удовольствие к вам придет гарантировано.</p>
 					<p>Но если вы все-таки тверды в своем желании избавиться от пластинок, то в идеале составьте список имеющихся виниловых дисков и вышлите его нам на почту. Либо вы можете сделать фотографии на телефон и выслать нам. Если все это сложно, то звоните, и мы вас проконсультируем.</p>
@@ -553,16 +583,25 @@ $(function() {
   $(window).resize(bgCarousel);
 
 
-
+/*--------------------------------------------------------------
+# Collapse
+--------------------------------------------------------------*/
 $(window).resize(function(){
-	if( $(window).outerWidth() <= 1140 ) {
-		$('.js-collapse-filter').addClass('collapse');
-		$('.js-collapse-filter').collapse('hide');
+	if( $(window).outerWidth() < 768) {
+		$('.js-collapse-mobile').addClass('collapse');
+		$('.js-collapse-mobile').collapse('hide');
+
+		$(document).on('click', '[data-toggle="collapse"]', function (e) {
+			var $target = $(this).closest('.collapse-container').find('.collapse-body');
+			$target.collapse('toggle');
+		});
 	} else {
-		$('.js-collapse-filter').removeClass('collapse');
-		$('.js-collapse-filter').removeAttr('style');
+		$('.js-collapse-mobile').removeClass('collapse');
+		$('.js-collapse-mobile').removeAttr('style');
 	}
 }).resize();
+
+
 
 	// init slider reviews
 	// $('.js-slider-reviews').slick({

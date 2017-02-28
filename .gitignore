@@ -1,5 +1,7 @@
 # Folder view configuration files
 .DS_Store
+thumbs.db
+.idea
 
 # Project
 node_modules
