@@ -78,10 +78,10 @@
 	<div class="container">
 
 		<aside class="main-sidebar">
-			<div class="b-filter">
-				<div class="b-filter_title" data-toggle="collapse" data-target=".js-collapse-filter" aria-expanded="false">Поиск по каталогу</div>
-				<div class="js-collapse-mobile collapse">
-					<form action="#">
+			<div class="b-filter collapse-container">
+				<div class="b-filter_title" data-toggle="collapse" aria-expanded="false">Поиск по каталогу</div>
+				<div class="js-collapse-mobile collapse-body collapse">
+					<form class="b-filter_form" action="#">
 						<div class="form-group">
 							<label for="filterPerformer">Исполнитель</label>
 							<input class="form-control" type="text" value="" id="filterPerformer" placeholder="например, Michael Jackson">
@@ -110,7 +110,7 @@
 								<option value="">item</option>
 							</select>
 						</div>
-						<fieldset class="form-group">
+						<fieldset class="special-labels form-group">
 							<legend>Особые метки</legend>
 							<div class="form-check">
 								<label class="form-check-label">
@@ -127,17 +127,23 @@
 						</fieldset>
 						<fieldset class="form-group">
 							<legend>Лучшие</legend>
-							<div class="form-check">
-								<label class="form-check-label">
-									<input type="checkbox" class="form-check-input" id="filterMetaCheck1" checked>
-									ТОП 10
-								</label>
-							</div>
-							<div class="form-check">
-								<label class="form-check-label">
-									<input type="checkbox" class="form-check-input" id="filterMetaCheck2">
-									ТОП 100
-								</label>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" id="filterMetaCheck1" checked>
+											ТОП 10
+										</label>
+									</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" id="filterMetaCheck2">
+											ТОП 100
+										</label>
+									</div>
+								</div>
 							</div>
 						</fieldset>
 						<button type="submit" class="btn btn-primary btn-animate">Искать по каталогу</button>
@@ -162,7 +168,7 @@
 
 		<div class="main-content">
 
-			<div id="mainCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+			<div id="mainCarousel" class="main-carousel carousel slide" data-ride="carousel">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
 					<li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
@@ -557,30 +563,33 @@
 <script>
 
 $(function() {
+	
 	var WINDOW_W = $(window).outerWidth();
 
-
-  function bgCarousel() {
-  	var WINDOW_W = $(window).outerWidth();
-	if (WINDOW_W >= 1140) {
-		$.adaptiveBackground.run({
-			selector: 'img[data-adaptive-background="1"]',
-			parent: '#mainCarousel .item',
-			success: function($img, data) {
+/*--------------------------------------------------------------
+#  Carousel. Определяет доминирующий цвет на обложке и применяет его к фону
+--------------------------------------------------------------*/
+	function bgCarousel() {
+		var WINDOW_W = $(window).outerWidth();
+		if (WINDOW_W >= 1140) {
+			$.adaptiveBackground.run({
+				selector: 'img[data-adaptive-background="1"]',
+				parent: '#mainCarousel .item',
+				success: function($img, data) {
 				// console.log('Success!', $img, data);
 				// console.log(data.color);
 			}
 		});
-	} else {
-		$('#mainCarousel .item').removeAttr('style');
+		} else {
+			$('#mainCarousel .item').removeAttr('style');
+		}
 	}
-  }
-  // $('#mainCarousel').on('load', function() {
-  //   bgCarousel();
-  // });
-  bgCarousel();
+	// $('#mainCarousel').on('load', function() {
+	//   bgCarousel();
+	// });
+	bgCarousel();
 
-  $(window).resize(bgCarousel);
+	$(window).resize(bgCarousel);
 
 
 /*--------------------------------------------------------------
@@ -601,48 +610,6 @@ $(window).resize(function(){
 	}
 }).resize();
 
-
-
-	// init slider reviews
-	// $('.js-slider-reviews').slick({
-	// slidesToShow: 3,
-	// slidesToScroll: 1,
-	// arrows: false,
-	// dots: true,
-	// centerMode: true,
-	// asNavFor: '.js-slider-reviews-nav',
-	// variableWidth: true,
-	// responsive: [
-	// 	{
-	// 		breakpoint: 640,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 		}
-	// 	}
-	// ]
-	// });
-	// $('.js-slider-reviews-nav').slick({
-	// 	slidesToShow: 7,
-	// 	slidesToScroll: 1,
-	// 	asNavFor: '.js-slider-reviews',
-	// 	variableWidth: true,
-	// 	dots: false,
-	// 	focusOnSelect: true,
-	// 	responsive: [
-	// 		{
-	// 			breakpoint: 640,
-	// 			settings: {
-	// 				slidesToShow: 4,
-	// 			}
-	// 		},
-	// 		{
-	// 			breakpoint: 376,
-	// 			settings: {
-	// 				slidesToShow: 2,
-	// 			}
-	// 		}
-	// 	]
-	// });
 
 	}); // end jquery
 </script>
